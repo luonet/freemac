@@ -12,16 +12,35 @@ Build a free development environment on Mac OSX.
 
 ## Table of Contents
 
-* [原则](#原则)
+* [Principles](#principles)
 * [System Preferences](#system-preferences)
   * [System Language](#system-language)
   * [Keyboard](#keyboard)
+  * [Trackpad](#trackpad)
+  * [Dock](#Dock)
+  * [Spotlight](#Spotlight)
+  * [输入法](#输入法)
+  * [Mission Control](#mission-control)
+* [Tools](#tools)
+  * [Automatic Installation](#automatic-installation)
+  * [Homebrew](#homebrew)
+  * [Homebrew Cask](#homebrew-cask)
+  * [iTerm2](#iterm2)
+  * [Zsh](#zsh)
+  * [Vim](#vim)
+  * [Tmux](#tmux)
+  * [Vagrant](#vagrant)
+  * [Browser](#browser)
+  * [科学上网](#科学上网)
+* [快捷键](#快捷键)
+* [Tips](#tips)
+* [References](#references)
 
-## 原则
+## Principles
 
 1. 目标：Productive & Efficient. 不要玩物丧志。
 2. 深思熟虑。自动化。KISS.
-3. 谦卑。闻道有先后，你的 taste 没什么了不起的。
+3. 谦卑。闻道有先后，taste 没什么了不起的。
 
 ## System Preferences
 
@@ -87,15 +106,19 @@ Get more spaces from dock.
 
 1. 推荐使用百度或搜狗输入法。我目前使用百度。
 2. 同步词库与个人配置。
-3. Keyboard -> Input Sources -> Automatically switch
-
-### Finder
+3. Keyboard |> Input Sources |> Automatically switch
 
 ### Mission Control
 
 使用 HotCorners 快速关闭屏幕。
 
-## Installing Tools
+## Tools
+
+### Automatic Installation
+
+```
+sh -c "`curl -fsSL https://raw.githubusercontent.com/luonet/freemac/master/install`"
+```
 
 ### XCode
 
@@ -137,13 +160,19 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+### Vim
+
+[luonet's vim automatic installation](https://github.com/luonet/dotfiles):
+
+```
+sh -c "`curl -fsSL https://raw.githubusercontent.com/luonet/dotfiles/master/install`"
+```
+
 ### Tmux
 
 ```
 brew install tmux
 ```
-
-### Vim
 
 ### Quicklook
 
@@ -152,7 +181,7 @@ brew cask install qlmarkdown betterzipql webpquicklook qlcolorcode
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE;killall Finder
 ```
 
-### Virtual Machine
+### Vagrant
 
 ```
 brew cask install vagrant virtualbox
@@ -200,11 +229,23 @@ brew cask install cheatsheet
 brew cask install appcleaner
 ```
 
-## 科学上网
+### 科学上网
+
+```
+brew cask install shadowsocksx
+```
+
+If you are using OpenVPN:
+
+```
+brew cask install tunnelblick
+```
 
 ## 快捷键
 
-## 参考
+## Tips
+
+## References
 
 * http://sourabhbajaj.com/mac-setup/
 * https://github.com/thoughtbot/laptop https://raw.githubusercontent.com/thoughtbot/laptop/master/mac

@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# XCode
+xcode-select --install
+# check
+xcode-select -p
+
+# Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+
+# Homebrew Cask
+brew install caskroom/cask/brew-cask
+
+brew install tmux
+brew install zsh
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Vim
+sh -c "`curl -fsSL https://raw.githubusercontent.com/luonet/dotfiles/master/install`"
+
+brew cask install iterm2
+brew cask install vagrant virtualbox
+brew cask install xtrafinder
+brew cask install go2shell
+brew cask install firefox
+brew cask install evernote
+brew cask install mplayerx
+brew cask install vlc
+brew cask install licecap
+brew cask install keycastr
+brew cask install the-unarchiver
+brew cask install spectacle
+brew cask install cheatsheet
+brew cask install appcleaner
+brew cask install shadowsocksx
+
+# QuickLook https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql suspicious-package ipaql
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE;killall Finder
