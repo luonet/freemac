@@ -1,3 +1,7 @@
+# Warning
+
+此文档刚刚创建，目前极不完善，马上会修改出一个更好的版本，敬请关注。
+
 # FreeMac
 
 Build a free development environment on Mac OSX.
@@ -6,15 +10,22 @@ Build a free development environment on Mac OSX.
 * Free, 尽量使用免费软件（ 不一定是自由软件），尽量不使用盗版和破解软件。
 * Free, 原作者来自 FreeWheel.
 
+## Table of Contents
+
+* [原则](#原则)
+* [System Preferences](#system-preferences)
+  * [System Language](#system-language)
+  * [Keyboard](#keyboard)
+
 ## 原则
 
 1. 目标：Productive & Efficient. 不要玩物丧志。
 2. 深思熟虑。自动化。KISS.
 3. 谦卑。闻道有先后，你的 taste 没什么了不起的。
 
-## Basic Configurations
+## System Preferences
 
-Basic configurations may need your manual operations.
+System Preferences may need your manual operations.
 
 ### System Language
 
